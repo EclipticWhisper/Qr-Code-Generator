@@ -1,2 +1,4 @@
-Node_modules/
+node_modules/
 url.txt
+frontend/dist/
+frontend/node_modules/

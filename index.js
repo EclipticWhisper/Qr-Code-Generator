@@ -16,9 +16,9 @@ inquirer
         console.log('Saved URL to url.txt!');
 
         // 2. Generate the QR code using the user's input directly
-        const qr_svg = qr.image(answers.url, { type: 'svg' });
-        qr_svg.pipe(fs.createWriteStream('i_love_qr.svg'));
-        console.log('QR Code generated successfully as i_love_qr.svg!');
+        const qr_svg = qr.image(answers.url, { type: 'png' });
+        qr_svg.pipe(fs.createWriteStream('i_love_qr.png'));
+        console.log('QR Code generated successfully as i_love_qr.png!');
     })
     .catch((error) => {
         if (error.isTtyError) {
